@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B5C617D22CB0B9900022F69 /* ZQDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C617C22CB0B9900022F69 /* ZQDetailViewController.m */; };
+		2B73481022C4A59B0007C40F /* ZQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73480F22C4A59B0007C40F /* ZQAppDelegate.m */; };
+		2B73481822C4A5B40007C40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B73481722C4A5B40007C40F /* Assets.xcassets */; };
+		2B73481B22C4A5B40007C40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B73481922C4A5B40007C40F /* LaunchScreen.storyboard */; };
+		2B73481E22C4A5B40007C40F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73481D22C4A5B40007C40F /* main.m */; };
+		2B73484822C4AB950007C40F /* ZQTodayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73484722C4AB950007C40F /* ZQTodayController.m */; };
+		2B73484B22C4AC1C0007C40F /* ZQTodayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73484A22C4AC1C0007C40F /* ZQTodayDataSource.m */; };
+		2B73484E22C4ADEB0007C40F /* ZQTodayGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73484D22C4ADEB0007C40F /* ZQTodayGameCell.m */; };
+		2B73485322C4B36E0007C40F /* games.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485222C4B36E0007C40F /* games.plist */; };
+		2B73485922C4C0EB0007C40F /* ZQTodayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485822C4C0EB0007C40F /* ZQTodayController.xib */; };
+		2B73485C22C4CAD10007C40F /* ZQTodayGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485B22C4CAD10007C40F /* ZQTodayGameCell.xib */; };
+		2B73486022C4DAB20007C40F /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73485F22C4DAB20007C40F /* UIView+Animations.m */; };
+		2B9C594E22CDDD67006C246A /* ZQTransitionAnimatior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C594D22CDDD67006C246A /* ZQTransitionAnimatior.m */; };
+		2B9C595122CDE123006C246A /* ZQLevelTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C595022CDE123006C246A /* ZQLevelTransitionAnimator.m */; };
+		2B9C595F22CF3448006C246A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C595E22CF3447006C246A /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B5C617A22C9B43400022F69 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2B5C617B22CB0B9900022F69 /* ZQDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQDetailViewController.h; sourceTree = "<group>"; };
+		2B5C617C22CB0B9900022F69 /* ZQDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQDetailViewController.m; sourceTree = "<group>"; };
+		2B73480B22C4A59B0007C40F /* ZQTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B73480E22C4A59B0007C40F /* ZQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQAppDelegate.h; sourceTree = "<group>"; };
+		2B73480F22C4A59B0007C40F /* ZQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQAppDelegate.m; sourceTree = "<group>"; };
+		2B73481722C4A5B40007C40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B73481A22C4A5B40007C40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B73481C22C4A5B40007C40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B73481D22C4A5B40007C40F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B73484622C4AB950007C40F /* ZQTodayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayController.h; sourceTree = "<group>"; };
+		2B73484722C4AB950007C40F /* ZQTodayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayController.m; sourceTree = "<group>"; };
+		2B73484922C4AC1C0007C40F /* ZQTodayDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayDataSource.h; sourceTree = "<group>"; };
+		2B73484A22C4AC1C0007C40F /* ZQTodayDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayDataSource.m; sourceTree = "<group>"; };
+		2B73484C22C4ADEB0007C40F /* ZQTodayGameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayGameCell.h; sourceTree = "<group>"; };
+		2B73484D22C4ADEB0007C40F /* ZQTodayGameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayGameCell.m; sourceTree = "<group>"; };
+		2B73485222C4B36E0007C40F /* games.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = games.plist; sourceTree = "<group>"; };
+		2B73485822C4C0EB0007C40F /* ZQTodayController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQTodayController.xib; sourceTree = "<group>"; };
+		2B73485B22C4CAD10007C40F /* ZQTodayGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQTodayGameCell.xib; sourceTree = "<group>"; };
+		2B73485E22C4DAB20007C40F /* UIView+Animations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animations.h"; sourceTree = "<group>"; };
+		2B73485F22C4DAB20007C40F /* UIView+Animations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animations.m"; sourceTree = "<group>"; };
+		2B9C594C22CDDD67006C246A /* ZQTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTransitionAnimator.h; sourceTree = "<group>"; };
+		2B9C594D22CDDD67006C246A /* ZQTransitionAnimatior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTransitionAnimatior.m; sourceTree = "<group>"; };
+		2B9C594F22CDE123006C246A /* ZQLevelTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQLevelTransitionAnimator.h; sourceTree = "<group>"; };
+		2B9C595022CDE123006C246A /* ZQLevelTransitionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQLevelTransitionAnimator.m; sourceTree = "<group>"; };
+		2B9C595E22CF3447006C246A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B73480822C4A59B0007C40F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B73480222C4A59B0007C40F = {
+			isa = PBXGroup;
+			children = (
+				2B9C595E22CF3447006C246A /* Default-568h@2x.png */,
+				2B73480D22C4A59B0007C40F /* ZQTransitionDemo */,
+				2B73480C22C4A59B0007C40F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B73480C22C4A59B0007C40F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B73480B22C4A59B0007C40F /* ZQTransitionDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B73480D22C4A59B0007C40F /* ZQTransitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2B73484122C4AAEC0007C40F /* AppDelegate */,
+				2B73484022C4AAE30007C40F /* Today */,
+				2B73484522C4AB280007C40F /* Support File */,
+			);
+			path = ZQTransitionDemo;
+			sourceTree = "<group>";
+		};
+		2B73484022C4AAE30007C40F /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				2B73485D22C4DA8A0007C40F /* Service */,
+				2B73484422C4AB1C0007C40F /* Model */,
+				2B73484322C4AB0C0007C40F /* View */,
+				2B73484222C4AB010007C40F /* Controller */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		2B73484122C4AAEC0007C40F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2B73480E22C4A59B0007C40F /* ZQAppDelegate.h */,
+				2B73480F22C4A59B0007C40F /* ZQAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2B73484222C4AB010007C40F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B9C596022CF3507006C246A /* Level */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2B73484322C4AB0C0007C40F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B73485E22C4DAB20007C40F /* UIView+Animations.h */,
+				2B73485F22C4DAB20007C40F /* UIView+Animations.m */,
+				2B73484922C4AC1C0007C40F /* ZQTodayDataSource.h */,
+				2B73484A22C4AC1C0007C40F /* ZQTodayDataSource.m */,
+				2B73484C22C4ADEB0007C40F /* ZQTodayGameCell.h */,
+				2B73484D22C4ADEB0007C40F /* ZQTodayGameCell.m */,
+				2B73485B22C4CAD10007C40F /* ZQTodayGameCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B73484422C4AB1C0007C40F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B9C594C22CDDD67006C246A /* ZQTransitionAnimator.h */,
+				2B9C594D22CDDD67006C246A /* ZQTransitionAnimatior.m */,
+				2B9C594F22CDE123006C246A /* ZQLevelTransitionAnimator.h */,
+				2B9C595022CDE123006C246A /* ZQLevelTransitionAnimator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B73484522C4AB280007C40F /* Support File */ = {
+			isa = PBXGroup;
+			children = (
+				2B73481722C4A5B40007C40F /* Assets.xcassets */,
+				2B73481922C4A5B40007C40F /* LaunchScreen.storyboard */,
+				2B73481C22C4A5B40007C40F /* Info.plist */,
+				2B73481D22C4A5B40007C40F /* main.m */,
+				2B73485222C4B36E0007C40F /* games.plist */,
+				2B5C617A22C9B43400022F69 /* PrefixHeader.pch */,
+			);
+			name = "Support File";
+			sourceTree = "<group>";
+		};
+		2B73485D22C4DA8A0007C40F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2B9C596022CF3507006C246A /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				2B5C617B22CB0B9900022F69 /* ZQDetailViewController.h */,
+				2B5C617C22CB0B9900022F69 /* ZQDetailViewController.m */,
+				2B73484622C4AB950007C40F /* ZQTodayController.h */,
+				2B73484722C4AB950007C40F /* ZQTodayController.m */,
+				2B73485822C4C0EB0007C40F /* ZQTodayController.xib */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B73480A22C4A59B0007C40F /* ZQTransitionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73483722C4A5B50007C40F /* Build configuration list for PBXNativeTarget "ZQTransitionDemo" */;
+			buildPhases = (
+				2B73480722C4A59B0007C40F /* Sources */,
+				2B73480822C4A59B0007C40F /* Frameworks */,
+				2B73480922C4A59B0007C40F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZQTransitionDemo;
+			productName = AppStoreDemo;
+			productReference = 2B73480B22C4A59B0007C40F /* ZQTransitionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B73480322C4A59B0007C40F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = caozhiqiang;
+				TargetAttributes = {
+					2B73480A22C4A59B0007C40F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2B73480622C4A59B0007C40F /* Build configuration list for PBXProject "ZQTransitionDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B73480222C4A59B0007C40F;
+			productRefGroup = 2B73480C22C4A59B0007C40F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B73480A22C4A59B0007C40F /* ZQTransitionDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B73480922C4A59B0007C40F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73481B22C4A5B40007C40F /* LaunchScreen.storyboard in Resources */,
+				2B73485322C4B36E0007C40F /* games.plist in Resources */,
+				2B73485922C4C0EB0007C40F /* ZQTodayController.xib in Resources */,
+				2B73485C22C4CAD10007C40F /* ZQTodayGameCell.xib in Resources */,
+				2B73481822C4A5B40007C40F /* Assets.xcassets in Resources */,
+				2B9C595F22CF3448006C246A /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B73480722C4A59B0007C40F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5C617D22CB0B9900022F69 /* ZQDetailViewController.m in Sources */,
+				2B73484822C4AB950007C40F /* ZQTodayController.m in Sources */,
+				2B9C594E22CDDD67006C246A /* ZQTransitionAnimatior.m in Sources */,
+				2B73486022C4DAB20007C40F /* UIView+Animations.m in Sources */,
+				2B73484B22C4AC1C0007C40F /* ZQTodayDataSource.m in Sources */,
+				2B73484E22C4ADEB0007C40F /* ZQTodayGameCell.m in Sources */,
+				2B9C595122CDE123006C246A /* ZQLevelTransitionAnimator.m in Sources */,
+				2B73481E22C4A5B40007C40F /* main.m in Sources */,
+				2B73481022C4A59B0007C40F /* ZQAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B73481922C4A5B40007C40F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B73481A22C4A5B40007C40F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B73483522C4A5B50007C40F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B73483622C4A5B50007C40F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B73483822C4A5B50007C40F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGASPGR8DQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZQTransitionDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ZQTransitionDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanmei.AppStoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2B73483922C4A5B50007C40F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGASPGR8DQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZQTransitionDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ZQTransitionDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanmei.AppStoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B73480622C4A59B0007C40F /* Build configuration list for PBXProject "ZQTransitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73483522C4A5B50007C40F /* Debug */,
+				2B73483622C4A5B50007C40F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B73483722C4A5B50007C40F /* Build configuration list for PBXNativeTarget "ZQTransitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73483822C4A5B50007C40F /* Debug */,
+				2B73483922C4A5B50007C40F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B73480322C4A59B0007C40F /* Project object */;
+}
