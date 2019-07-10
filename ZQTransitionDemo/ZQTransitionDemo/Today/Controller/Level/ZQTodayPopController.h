@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface ZQTodayPopController : UIViewController
+
+@property (nonatomic, strong) UIImage *backImage;
+@property (nonatomic, strong) UIImage *snapImage;
 
 @end
 
-NS_ASSUME_NONNULL_END

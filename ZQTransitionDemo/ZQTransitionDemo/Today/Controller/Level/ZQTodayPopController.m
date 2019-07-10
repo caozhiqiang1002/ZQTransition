@@ -9,24 +9,70 @@
 #import "ZQTodayPopController.h"
 
 @interface ZQTodayPopController ()
-
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIImageView *snapView;
+@property (nonatomic, assign) CGPoint point;
 @end
 
 @implementation ZQTodayPopController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [super viewDidLoad];;
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.hidden = YES;
+    
+    [self createSnapView];
+    [self createImageView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)createSnapView {
+    self.snapView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    self.snapView.backgroundColor = [UIColor clearColor];
+    self.snapView.image = self.snapImage;
+    self.snapView.contentMode = UIViewContentModeScaleAspectFill;
+    self.snapView.clipsToBounds = YES;
+    [self.view addSubview:self.snapView];
+    
+    UIBlurEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:effect];
+    effectView.frame = self.snapView.bounds;
+    [self.snapView addSubview:effectView];
 }
-*/
+
+- (void)createImageView {
+    self.imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    self.imageView.backgroundColor = [UIColor clearColor];
+    self.imageView.image = self.backImage;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.imageView.clipsToBounds = YES;
+    [self.view addSubview:self.imageView];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.point = [touches.anyObject locationInView:self.snapView];
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CGPoint point = [touches.anyObject locationInView:self.snapView];
+    if (point.y > self.point.y) {
+        CGFloat scale = 1.0 - fabs(point.y - self.point.y)/kScreenHeight;
+        if (scale >= 0.8) {
+            self.imageView.transform = CGAffineTransformMakeScale(scale, scale);
+            self.imageView.layer.cornerRadius = 25.0 *(1 - scale)*5;
+        }else{
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+        
+    }else {
+        [self touchesEnded:touches withEvent:event];
+    }
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [UIView startAnimateDuration:0.25 animate:^{
+        self.imageView.transform = CGAffineTransformIdentity;
+        self.imageView.layer.cornerRadius = 0.0f;
+    } complete:nil];
+}
 
 @end

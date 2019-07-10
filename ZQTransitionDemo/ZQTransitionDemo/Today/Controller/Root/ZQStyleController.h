@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+typedef NS_ENUM(NSUInteger, ZQAniamtionType) {
+    ZQAniamtionTypeLevel,       //层次动画 - 仿AppStore（Today首页）
+};
+
 
 @interface ZQStyleController : UIViewController
 
-@end
+@property (nonatomic, assign) ZQAniamtionType type;
 
-NS_ASSUME_NONNULL_END
+@end

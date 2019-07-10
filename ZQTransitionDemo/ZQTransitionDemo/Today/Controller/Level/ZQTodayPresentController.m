@@ -1,31 +1,32 @@
 //
-//  ZQTodayController.m
+//  ZQTodayPresentController.m
 //  AppStoreDemo
 //
 //  Created by caozhiqiang on 2019/6/27.
 //  Copyright © 2019 caozhiqiang. All rights reserved.
 //
 
-#import "ZQTodayController.h"
+#import "ZQTodayPresentController.h"
 #import "ZQTodayDataSource.h"
 #import "UIView+Animations.h"
-#import "ZQDetailViewController.h"
+#import "ZQTodayDismissController.h"
 #import "ZQAppDelegate.h"
 #import "ZQLevelTransitionAnimator.h"
 
 static NSString * const CellID = @"Today_Game_ID";
 
-@interface ZQTodayController ()<UITableViewDelegate,
-                                UINavigationControllerDelegate,
-                                UIViewControllerTransitioningDelegate,
-                                ZQTodayGameCellDelegate,
-                                ZQLevelTransitionAnimatorDelegate>
+@interface ZQTodayPresentController ()<UICollectionViewDelegateFlowLayout, UIViewControllerTransitioningDelegate, ZQTodayGameCellDelegate, ZQLevelTransitionAnimatorDelegate>
+
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (nonatomic, strong) NSIndexPath *indexPath;
 
 @property (nonatomic, strong) ZQTodayDataSource *dataSource;
 
 @end
 
-@implementation ZQTodayController
+@implementation ZQTodayPresentController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,13 +49,12 @@ static NSString * const CellID = @"Today_Game_ID";
     
     self.dataSource = [ZQTodayDataSource dataSourceWithItems:images
                                                       cellId:CellID configCellBlock:block];
-    self.tableView.dataSource = self.dataSource;
-    self.tableView.delegate = self;
+    self.collectionView.dataSource = self.dataSource;
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZQTodayGameCell" bundle:nil]
-         forCellReuseIdentifier:CellID];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"ZQTodayGameCell" bundle:nil]
+         forCellWithReuseIdentifier:CellID];
     
-    [self.tableView reloadData];
+    [self.collectionView reloadData];
 }
 
 - (UIImage *)normalSnapshotImage {
@@ -65,51 +65,41 @@ static NSString * const CellID = @"Today_Game_ID";
     return image;
 }
 
-#pragma mark - UITableViewDelegate
+#pragma mark - UICollectionViewDelegateFlowLayout
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 500;
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(kScreenWidth-20*2, 480);
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"*** didSelectRowAtIndexPath ***");
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
+                        layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(15, 20, 15, 20);
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 15;
 }
 
 #pragma mark - ZQTodayGameCellDelegate
 
 - (void)jumpToImageDetail:(ZQTodayGameCell *)cell {
     
-    self.indexPath = [self.tableView indexPathForCell:cell];
+    self.indexPath = [self.collectionView indexPathForCell:cell];
     
     cell.gameImageView.hidden = YES;
     UIImage *snapImage = [self normalSnapshotImage];
     
-    ZQDetailViewController *detailVC = [[ZQDetailViewController alloc] init];
+    ZQTodayDismissController *detailVC = [[ZQTodayDismissController alloc] init];
     detailVC.snapImage = snapImage;
     detailVC.backImage = cell.gameImageView.image;
     detailVC.transitioningDelegate = self;
     detailVC.modalPresentationStyle = UIModalPresentationCustom;
-    self.navigationController.delegate = self;
     [self presentViewController:detailVC animated:YES completion:nil];
-//    [self.navigationController pushViewController:detailVC animated:YES];
-}
-
-#pragma mark - UINavigationControllerDelegate
-
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
-                                  animationControllerForOperation:(UINavigationControllerOperation)operation
-                                               fromViewController:(UIViewController *)fromVC
-                                                 toViewController:(UIViewController *)toVC
-{
-    if (operation == UINavigationControllerOperationPush) {
-        return [ZQLevelTransitionAnimator transitionWithDelegate:self style:ZQTransitionAnimatorStylePush complete:nil];
-    }
-    return [ZQLevelTransitionAnimator transitionWithDelegate:self
-                                                       style:ZQTransitionAnimatorStylePop
-                                                    complete:^(UIViewController *toVC) {
-                                                        ZQTodayGameCell *cell = [self.tableView cellForRowAtIndexPath:self.indexPath];
-                                                        cell.gameImageView.hidden = NO;
-                                                    }];
 }
 
 #pragma mark - UIViewControllerTransitioningDelegate
@@ -127,7 +117,7 @@ static NSString * const CellID = @"Today_Game_ID";
     return [ZQLevelTransitionAnimator transitionWithDelegate:nil
                                                        style:ZQTransitionAnimatorStyleDismiss
                                                     complete:^(UIViewController *toVC) {
-                                                        ZQTodayGameCell *cell = [self.tableView cellForRowAtIndexPath:self.indexPath];
+                                                        ZQTodayGameCell *cell = (ZQTodayGameCell *)[self.collectionView cellForItemAtIndexPath:self.indexPath];
                                                         cell.gameImageView.hidden = NO;
                                                     }];
 }
@@ -135,13 +125,11 @@ static NSString * const CellID = @"Today_Game_ID";
 #pragma mark - ZQLevelTransitionAnimatorDelegate
 
 - (UIView *)customViewForTransitionAnimatior:(ZQLevelTransitionAnimator *)transitionAnimator {
-    ZQTodayGameCell *cell = [self.tableView cellForRowAtIndexPath:self.indexPath];
+    ZQTodayGameCell *cell = (ZQTodayGameCell *)[self.collectionView cellForItemAtIndexPath:self.indexPath];
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:cell.gameImageView.image];
-    imageView.clipsToBounds = YES;
-    imageView.layer.cornerRadius = 25.0f;
-    imageView.contentMode = UIViewContentModeScaleAspectFill;
     imageView.frame = [cell.gameImageView convertRect:cell.gameImageView.bounds toView:self.view];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
     
     return imageView;
 }

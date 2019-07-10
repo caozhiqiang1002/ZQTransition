@@ -1,5 +1,5 @@
 //
-//  ZQDetailViewController.h
+//  ZQTodayDismissController.h
 //  AppStoreDemo
 //
 //  Created by caozhiqiang on 2019/7/2.
@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ZQDetailViewController : UIViewController
-
-@property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) UIImageView *snapView;
+@interface ZQTodayDismissController : UIViewController
 
 @property (nonatomic, strong) UIImage *backImage;
 @property (nonatomic, strong) UIImage *snapImage;

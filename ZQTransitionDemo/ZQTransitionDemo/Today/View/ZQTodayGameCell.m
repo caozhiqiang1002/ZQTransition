@@ -17,10 +17,10 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.gameImageView.layer.cornerRadius = 25.0;
+    self.layer.cornerRadius = 25.0;
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-    [self.gameImageView addGestureRecognizer:tap];
+    [self addGestureRecognizer:tap];
 }
 
 #pragma mark - Touch
@@ -29,7 +29,7 @@
     NSLog(@"** touchesBegan **");
     if (!self.isAnimating) {
         [UIView startAnimateDuration:0.25f animate:^{
-            self.gameImageView.transform = CGAffineTransformMakeScale(0.97, 0.97);
+            self.transform = CGAffineTransformMakeScale(0.97, 0.97);
         } complete:nil];
         
         self.isAnimating = YES;
@@ -62,7 +62,7 @@
     NSLog(@"** tap **");
     if (!self.isAnimating) {
         [UIView startAnimateDuration:0.1f animate:^{
-            self.gameImageView.transform = CGAffineTransformMakeScale(0.99, 0.99);
+            self.transform = CGAffineTransformMakeScale(0.99, 0.99);
         } complete:^(BOOL isFinished) {
             if (self.delegate && [self.delegate respondsToSelector:@selector(jumpToImageDetail:)]) {
                 [self.delegate jumpToImageDetail:self];

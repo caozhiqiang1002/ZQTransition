@@ -7,27 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B5C617D22CB0B9900022F69 /* ZQDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C617C22CB0B9900022F69 /* ZQDetailViewController.m */; };
+		2B5A1DDD22D44A3A003C70BA /* ZQTodayGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5A1DDC22D44A3A003C70BA /* ZQTodayGameCell.xib */; };
+		2B5A1DE022D46475003C70BA /* ZQTodayPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A1DDF22D46475003C70BA /* ZQTodayPopController.m */; };
+		2B5C617D22CB0B9900022F69 /* ZQTodayDismissController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C617C22CB0B9900022F69 /* ZQTodayDismissController.m */; };
 		2B73481022C4A59B0007C40F /* ZQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73480F22C4A59B0007C40F /* ZQAppDelegate.m */; };
 		2B73481822C4A5B40007C40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B73481722C4A5B40007C40F /* Assets.xcassets */; };
 		2B73481B22C4A5B40007C40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B73481922C4A5B40007C40F /* LaunchScreen.storyboard */; };
 		2B73481E22C4A5B40007C40F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73481D22C4A5B40007C40F /* main.m */; };
-		2B73484822C4AB950007C40F /* ZQTodayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73484722C4AB950007C40F /* ZQTodayController.m */; };
+		2B73484822C4AB950007C40F /* ZQTodayPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73484722C4AB950007C40F /* ZQTodayPresentController.m */; };
 		2B73484B22C4AC1C0007C40F /* ZQTodayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73484A22C4AC1C0007C40F /* ZQTodayDataSource.m */; };
 		2B73484E22C4ADEB0007C40F /* ZQTodayGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73484D22C4ADEB0007C40F /* ZQTodayGameCell.m */; };
 		2B73485322C4B36E0007C40F /* games.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485222C4B36E0007C40F /* games.plist */; };
-		2B73485922C4C0EB0007C40F /* ZQTodayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485822C4C0EB0007C40F /* ZQTodayController.xib */; };
-		2B73485C22C4CAD10007C40F /* ZQTodayGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485B22C4CAD10007C40F /* ZQTodayGameCell.xib */; };
+		2B73485922C4C0EB0007C40F /* ZQTodayPresentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485822C4C0EB0007C40F /* ZQTodayPresentController.xib */; };
 		2B73486022C4DAB20007C40F /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73485F22C4DAB20007C40F /* UIView+Animations.m */; };
 		2B9C594E22CDDD67006C246A /* ZQTransitionAnimatior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C594D22CDDD67006C246A /* ZQTransitionAnimatior.m */; };
 		2B9C595122CDE123006C246A /* ZQLevelTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C595022CDE123006C246A /* ZQLevelTransitionAnimator.m */; };
 		2B9C595F22CF3448006C246A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C595E22CF3447006C246A /* Default-568h@2x.png */; };
+		2B9C596D22D432E3006C246A /* ZQRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C596B22D432E3006C246A /* ZQRootController.m */; };
+		2B9C596E22D432E3006C246A /* ZQRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C596C22D432E3006C246A /* ZQRootController.xib */; };
+		2B9C597222D43922006C246A /* ZQStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C597022D43922006C246A /* ZQStyleController.m */; };
+		2B9C597322D43922006C246A /* ZQStyleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C597122D43922006C246A /* ZQStyleController.xib */; };
+		2B9C597722D44470006C246A /* ZQTodayPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C597522D44470006C246A /* ZQTodayPushController.m */; };
+		2B9C597822D44470006C246A /* ZQTodayPushController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C597622D44470006C246A /* ZQTodayPushController.xib */; };
+		A6F511FF99B374174E70875C /* libPods-ZQTransitionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71AD222F939909A836B6905 /* libPods-ZQTransitionDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01549BFD5D7CA13971294967 /* Pods-ZQTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQTransitionDemo.release.xcconfig"; path = "Target Support Files/Pods-ZQTransitionDemo/Pods-ZQTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2B5A1DDC22D44A3A003C70BA /* ZQTodayGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQTodayGameCell.xib; sourceTree = "<group>"; };
+		2B5A1DDE22D46475003C70BA /* ZQTodayPopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayPopController.h; sourceTree = "<group>"; };
+		2B5A1DDF22D46475003C70BA /* ZQTodayPopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayPopController.m; sourceTree = "<group>"; };
 		2B5C617A22C9B43400022F69 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		2B5C617B22CB0B9900022F69 /* ZQDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQDetailViewController.h; sourceTree = "<group>"; };
-		2B5C617C22CB0B9900022F69 /* ZQDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQDetailViewController.m; sourceTree = "<group>"; };
+		2B5C617B22CB0B9900022F69 /* ZQTodayDismissController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayDismissController.h; sourceTree = "<group>"; };
+		2B5C617C22CB0B9900022F69 /* ZQTodayDismissController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayDismissController.m; sourceTree = "<group>"; };
 		2B73480B22C4A59B0007C40F /* ZQTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B73480E22C4A59B0007C40F /* ZQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQAppDelegate.h; sourceTree = "<group>"; };
 		2B73480F22C4A59B0007C40F /* ZQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQAppDelegate.m; sourceTree = "<group>"; };
@@ -35,15 +47,14 @@
 		2B73481A22C4A5B40007C40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B73481C22C4A5B40007C40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B73481D22C4A5B40007C40F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2B73484622C4AB950007C40F /* ZQTodayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayController.h; sourceTree = "<group>"; };
-		2B73484722C4AB950007C40F /* ZQTodayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayController.m; sourceTree = "<group>"; };
+		2B73484622C4AB950007C40F /* ZQTodayPresentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayPresentController.h; sourceTree = "<group>"; };
+		2B73484722C4AB950007C40F /* ZQTodayPresentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayPresentController.m; sourceTree = "<group>"; };
 		2B73484922C4AC1C0007C40F /* ZQTodayDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayDataSource.h; sourceTree = "<group>"; };
 		2B73484A22C4AC1C0007C40F /* ZQTodayDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayDataSource.m; sourceTree = "<group>"; };
 		2B73484C22C4ADEB0007C40F /* ZQTodayGameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTodayGameCell.h; sourceTree = "<group>"; };
 		2B73484D22C4ADEB0007C40F /* ZQTodayGameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTodayGameCell.m; sourceTree = "<group>"; };
 		2B73485222C4B36E0007C40F /* games.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = games.plist; sourceTree = "<group>"; };
-		2B73485822C4C0EB0007C40F /* ZQTodayController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQTodayController.xib; sourceTree = "<group>"; };
-		2B73485B22C4CAD10007C40F /* ZQTodayGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQTodayGameCell.xib; sourceTree = "<group>"; };
+		2B73485822C4C0EB0007C40F /* ZQTodayPresentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQTodayPresentController.xib; sourceTree = "<group>"; };
 		2B73485E22C4DAB20007C40F /* UIView+Animations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animations.h"; sourceTree = "<group>"; };
 		2B73485F22C4DAB20007C40F /* UIView+Animations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animations.m"; sourceTree = "<group>"; };
 		2B9C594C22CDDD67006C246A /* ZQTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTransitionAnimator.h; sourceTree = "<group>"; };
@@ -51,6 +62,17 @@
 		2B9C594F22CDE123006C246A /* ZQLevelTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQLevelTransitionAnimator.h; sourceTree = "<group>"; };
 		2B9C595022CDE123006C246A /* ZQLevelTransitionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQLevelTransitionAnimator.m; sourceTree = "<group>"; };
 		2B9C595E22CF3447006C246A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2B9C596A22D432E3006C246A /* ZQRootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQRootController.h; sourceTree = "<group>"; };
+		2B9C596B22D432E3006C246A /* ZQRootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQRootController.m; sourceTree = "<group>"; };
+		2B9C596C22D432E3006C246A /* ZQRootController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQRootController.xib; sourceTree = "<group>"; };
+		2B9C596F22D43921006C246A /* ZQStyleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQStyleController.h; sourceTree = "<group>"; };
+		2B9C597022D43922006C246A /* ZQStyleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQStyleController.m; sourceTree = "<group>"; };
+		2B9C597122D43922006C246A /* ZQStyleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQStyleController.xib; sourceTree = "<group>"; };
+		2B9C597422D44470006C246A /* ZQTodayPushController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZQTodayPushController.h; path = ZQTransitionDemo/Today/Controller/ZQTodayPushController.h; sourceTree = SOURCE_ROOT; };
+		2B9C597522D44470006C246A /* ZQTodayPushController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZQTodayPushController.m; path = ZQTransitionDemo/Today/Controller/ZQTodayPushController.m; sourceTree = SOURCE_ROOT; };
+		2B9C597622D44470006C246A /* ZQTodayPushController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ZQTodayPushController.xib; path = ZQTransitionDemo/Today/Controller/ZQTodayPushController.xib; sourceTree = SOURCE_ROOT; };
+		3432C401EB216D4C8FBAA067 /* Pods-ZQTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQTransitionDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZQTransitionDemo/Pods-ZQTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A71AD222F939909A836B6905 /* libPods-ZQTransitionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZQTransitionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,18 +80,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F511FF99B374174E70875C /* libPods-ZQTransitionDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D7371B14B7D7A150DC2584 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3432C401EB216D4C8FBAA067 /* Pods-ZQTransitionDemo.debug.xcconfig */,
+				01549BFD5D7CA13971294967 /* Pods-ZQTransitionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2B73480222C4A59B0007C40F = {
 			isa = PBXGroup;
 			children = (
 				2B9C595E22CF3447006C246A /* Default-568h@2x.png */,
 				2B73480D22C4A59B0007C40F /* ZQTransitionDemo */,
 				2B73480C22C4A59B0007C40F /* Products */,
+				00D7371B14B7D7A150DC2584 /* Pods */,
+				E6435C9C2CA7D76B90A3387E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +149,7 @@
 		2B73484222C4AB010007C40F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2B9C596922D4321C006C246A /* Root */,
 				2B9C596022CF3507006C246A /* Level */,
 			);
 			path = Controller;
@@ -128,7 +164,7 @@
 				2B73484A22C4AC1C0007C40F /* ZQTodayDataSource.m */,
 				2B73484C22C4ADEB0007C40F /* ZQTodayGameCell.h */,
 				2B73484D22C4ADEB0007C40F /* ZQTodayGameCell.m */,
-				2B73485B22C4CAD10007C40F /* ZQTodayGameCell.xib */,
+				2B5A1DDC22D44A3A003C70BA /* ZQTodayGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,13 +203,39 @@
 		2B9C596022CF3507006C246A /* Level */ = {
 			isa = PBXGroup;
 			children = (
-				2B5C617B22CB0B9900022F69 /* ZQDetailViewController.h */,
-				2B5C617C22CB0B9900022F69 /* ZQDetailViewController.m */,
-				2B73484622C4AB950007C40F /* ZQTodayController.h */,
-				2B73484722C4AB950007C40F /* ZQTodayController.m */,
-				2B73485822C4C0EB0007C40F /* ZQTodayController.xib */,
+				2B9C597422D44470006C246A /* ZQTodayPushController.h */,
+				2B9C597522D44470006C246A /* ZQTodayPushController.m */,
+				2B9C597622D44470006C246A /* ZQTodayPushController.xib */,
+				2B5A1DDE22D46475003C70BA /* ZQTodayPopController.h */,
+				2B5A1DDF22D46475003C70BA /* ZQTodayPopController.m */,
+				2B73484622C4AB950007C40F /* ZQTodayPresentController.h */,
+				2B73484722C4AB950007C40F /* ZQTodayPresentController.m */,
+				2B73485822C4C0EB0007C40F /* ZQTodayPresentController.xib */,
+				2B5C617B22CB0B9900022F69 /* ZQTodayDismissController.h */,
+				2B5C617C22CB0B9900022F69 /* ZQTodayDismissController.m */,
 			);
 			path = Level;
+			sourceTree = "<group>";
+		};
+		2B9C596922D4321C006C246A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2B9C596A22D432E3006C246A /* ZQRootController.h */,
+				2B9C596B22D432E3006C246A /* ZQRootController.m */,
+				2B9C596C22D432E3006C246A /* ZQRootController.xib */,
+				2B9C596F22D43921006C246A /* ZQStyleController.h */,
+				2B9C597022D43922006C246A /* ZQStyleController.m */,
+				2B9C597122D43922006C246A /* ZQStyleController.xib */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		E6435C9C2CA7D76B90A3387E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A71AD222F939909A836B6905 /* libPods-ZQTransitionDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B73483722C4A5B50007C40F /* Build configuration list for PBXNativeTarget "ZQTransitionDemo" */;
 			buildPhases = (
+				92F635A47FB83EDAB9ADC5FB /* [CP] Check Pods Manifest.lock */,
 				2B73480722C4A59B0007C40F /* Sources */,
 				2B73480822C4A59B0007C40F /* Frameworks */,
 				2B73480922C4A59B0007C40F /* Resources */,
@@ -235,28 +298,60 @@
 			files = (
 				2B73481B22C4A5B40007C40F /* LaunchScreen.storyboard in Resources */,
 				2B73485322C4B36E0007C40F /* games.plist in Resources */,
-				2B73485922C4C0EB0007C40F /* ZQTodayController.xib in Resources */,
-				2B73485C22C4CAD10007C40F /* ZQTodayGameCell.xib in Resources */,
+				2B9C596E22D432E3006C246A /* ZQRootController.xib in Resources */,
+				2B73485922C4C0EB0007C40F /* ZQTodayPresentController.xib in Resources */,
+				2B5A1DDD22D44A3A003C70BA /* ZQTodayGameCell.xib in Resources */,
+				2B9C597822D44470006C246A /* ZQTodayPushController.xib in Resources */,
 				2B73481822C4A5B40007C40F /* Assets.xcassets in Resources */,
+				2B9C597322D43922006C246A /* ZQStyleController.xib in Resources */,
 				2B9C595F22CF3448006C246A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92F635A47FB83EDAB9ADC5FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZQTransitionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B73480722C4A59B0007C40F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B5C617D22CB0B9900022F69 /* ZQDetailViewController.m in Sources */,
-				2B73484822C4AB950007C40F /* ZQTodayController.m in Sources */,
+				2B5C617D22CB0B9900022F69 /* ZQTodayDismissController.m in Sources */,
+				2B73484822C4AB950007C40F /* ZQTodayPresentController.m in Sources */,
+				2B5A1DE022D46475003C70BA /* ZQTodayPopController.m in Sources */,
 				2B9C594E22CDDD67006C246A /* ZQTransitionAnimatior.m in Sources */,
 				2B73486022C4DAB20007C40F /* UIView+Animations.m in Sources */,
+				2B9C597222D43922006C246A /* ZQStyleController.m in Sources */,
 				2B73484B22C4AC1C0007C40F /* ZQTodayDataSource.m in Sources */,
 				2B73484E22C4ADEB0007C40F /* ZQTodayGameCell.m in Sources */,
+				2B9C596D22D432E3006C246A /* ZQRootController.m in Sources */,
 				2B9C595122CDE123006C246A /* ZQLevelTransitionAnimator.m in Sources */,
 				2B73481E22C4A5B40007C40F /* main.m in Sources */,
+				2B9C597722D44470006C246A /* ZQTodayPushController.m in Sources */,
 				2B73481022C4A59B0007C40F /* ZQAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +484,7 @@
 		};
 		2B73483822C4A5B50007C40F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3432C401EB216D4C8FBAA067 /* Pods-ZQTransitionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -408,6 +504,7 @@
 		};
 		2B73483922C4A5B50007C40F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01549BFD5D7CA13971294967 /* Pods-ZQTransitionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

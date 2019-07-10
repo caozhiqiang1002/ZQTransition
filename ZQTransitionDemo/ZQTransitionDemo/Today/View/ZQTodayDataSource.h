@@ -11,7 +11,7 @@
 
 typedef void(^ConfigCellBlock)(id Cell, id imageName);
 
-@interface ZQTodayDataSource : NSObject<UITableViewDataSource>
+@interface ZQTodayDataSource : NSObject<UICollectionViewDataSource>
 
 + (instancetype)dataSourceWithItems:(NSArray *)items
                              cellId:(NSString *)cellId

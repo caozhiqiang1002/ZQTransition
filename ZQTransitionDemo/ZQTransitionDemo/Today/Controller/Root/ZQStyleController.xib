@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,8 +18,44 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2B-cu-ibZ">
+                    <rect key="frame" x="87.5" y="100" width="200" height="50"/>
+                    <color key="backgroundColor" red="0.92779582739999999" green="0.36053648615130435" blue="0.76126169833158297" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="37T-FT-gKn"/>
+                        <constraint firstAttribute="height" constant="50" id="e1B-Tx-EEI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Push">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="push:" destination="-1" eventType="touchUpInside" id="uzU-Kz-YC9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K7-to-Stz">
+                    <rect key="frame" x="87.5" y="250" width="200" height="50"/>
+                    <color key="backgroundColor" red="0.92779582739999999" green="0.57336552158887144" blue="0.11679194387343139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Present">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="present:" destination="-1" eventType="touchUpInside" id="65I-Wi-41I"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <constraints>
+                <constraint firstItem="6K7-to-Stz" firstAttribute="top" secondItem="v2B-cu-ibZ" secondAttribute="bottom" constant="100" id="2st-8x-sGj"/>
+                <constraint firstItem="6K7-to-Stz" firstAttribute="width" secondItem="v2B-cu-ibZ" secondAttribute="width" id="DW5-gL-tLn"/>
+                <constraint firstItem="6K7-to-Stz" firstAttribute="height" secondItem="v2B-cu-ibZ" secondAttribute="height" id="elQ-OF-1ea"/>
+                <constraint firstItem="v2B-cu-ibZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="gp3-bb-KF3"/>
+                <constraint firstItem="6K7-to-Stz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iIB-zx-4rl"/>
+                <constraint firstItem="v2B-cu-ibZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jey-UZ-vl1"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
         </view>
     </objects>
 </document>

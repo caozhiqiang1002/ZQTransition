@@ -7,7 +7,7 @@
 //
 
 #import "ZQAppDelegate.h"
-#import "zqTodayController.h"
+#import "ZQRootController.h"
 
 @interface ZQAppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    ZQTodayController *rootVC = [[ZQTodayController alloc] initWithNibName:@"ZQTodayController"
+    ZQRootController *rootVC = [[ZQRootController alloc] initWithNibName:@"ZQRootController"
                                                                     bundle:nil];
     UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     

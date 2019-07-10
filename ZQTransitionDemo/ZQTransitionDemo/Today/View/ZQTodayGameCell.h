@@ -16,7 +16,7 @@
 
 @end
 
-@interface ZQTodayGameCell : UITableViewCell
+@interface ZQTodayGameCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *gameImageView;
 

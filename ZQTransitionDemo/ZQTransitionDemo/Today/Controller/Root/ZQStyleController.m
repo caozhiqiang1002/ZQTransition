@@ -7,6 +7,8 @@
 //
 
 #import "ZQStyleController.h"
+#import "ZQTodayPresentController.h"
+#import "ZQTodayPushController.h"
 
 @interface ZQStyleController ()
 
@@ -18,15 +20,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)push:(id)sender {
+    switch (self.type) {
+        case ZQAniamtionTypeLevel:
+            {
+                ZQTodayPushController *todayVC = [[ZQTodayPushController alloc] init];
+                [self.navigationController pushViewController:todayVC animated:YES];
+            }
+            break;
+        default:
+            break;
+    }
 }
-*/
 
+- (IBAction)present:(id)sender {
+    switch (self.type) {
+        case ZQAniamtionTypeLevel:
+            {
+                ZQTodayPresentController *todayVC = [[ZQTodayPresentController alloc] init];
+                [self.navigationController pushViewController:todayVC animated:YES];
+            }
+            break;
+            
+        default:
+            break;
+    }
+}
 @end

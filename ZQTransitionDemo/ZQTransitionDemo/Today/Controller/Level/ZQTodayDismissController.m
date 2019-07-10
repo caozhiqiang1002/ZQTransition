@@ -1,22 +1,22 @@
 //
-//  ZQDetailViewController.m
+//  ZQTodayDismissController.m
 //  AppStoreDemo
 //
 //  Created by caozhiqiang on 2019/7/2.
 //  Copyright © 2019 caozhiqiang. All rights reserved.
 //
 
-#import "ZQDetailViewController.h"
-#import "ZQTodayPresentController.h"
-#import "ZQTodayGameCell.h"
-#import "ZQLevelTransitionAnimator.h"
+#import "ZQTodayDismissController.h"
 
-@interface ZQDetailViewController ()
+@interface ZQTodayDismissController ()
+
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIImageView *snapView;
 
 @property (nonatomic, assign) CGPoint point;
 @end
 
-@implementation ZQDetailViewController
+@implementation ZQTodayDismissController
 
 - (void)viewDidLoad {
     [super viewDidLoad];;
@@ -61,7 +61,6 @@
             self.imageView.transform = CGAffineTransformMakeScale(scale, scale);
             self.imageView.layer.cornerRadius = 25.0 *(1 - scale)*5;
         }else{
-//            [self.navigationController popViewControllerAnimated:YES];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         
