@@ -1,16 +1,16 @@
 PODS:
-  - ZQTransition (1.0.1)
+  - ZQTransition (1.0.2)
 
 DEPENDENCIES:
-  - ZQTransition
+  - ZQTransition (from `../`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - ZQTransition
+EXTERNAL SOURCES:
+  ZQTransition:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ZQTransition: dd89e9fed6a6b5d155711d8e6552188184345a3c
+  ZQTransition: 75e9253fb6ee96d3da9f7f30938c8ef6159d4938
 
-PODFILE CHECKSUM: 74d131ed4a29e38fa134e80a75f22c82ae7dbc21
+PODFILE CHECKSUM: 91adbb4ddb69ed890c68b8e06b8e40f40f257407
 
 COCOAPODS: 1.7.3

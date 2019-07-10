@@ -20,8 +20,6 @@
 		2B73485322C4B36E0007C40F /* games.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485222C4B36E0007C40F /* games.plist */; };
 		2B73485922C4C0EB0007C40F /* ZQTodayPresentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B73485822C4C0EB0007C40F /* ZQTodayPresentController.xib */; };
 		2B73486022C4DAB20007C40F /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73485F22C4DAB20007C40F /* UIView+Animations.m */; };
-		2B9C594E22CDDD67006C246A /* ZQTransitionAnimatior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C594D22CDDD67006C246A /* ZQTransitionAnimatior.m */; };
-		2B9C595122CDE123006C246A /* ZQLevelTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C595022CDE123006C246A /* ZQLevelTransitionAnimator.m */; };
 		2B9C595F22CF3448006C246A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C595E22CF3447006C246A /* Default-568h@2x.png */; };
 		2B9C596D22D432E3006C246A /* ZQRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C596B22D432E3006C246A /* ZQRootController.m */; };
 		2B9C596E22D432E3006C246A /* ZQRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C596C22D432E3006C246A /* ZQRootController.xib */; };
@@ -57,10 +55,6 @@
 		2B73485822C4C0EB0007C40F /* ZQTodayPresentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZQTodayPresentController.xib; sourceTree = "<group>"; };
 		2B73485E22C4DAB20007C40F /* UIView+Animations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animations.h"; sourceTree = "<group>"; };
 		2B73485F22C4DAB20007C40F /* UIView+Animations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animations.m"; sourceTree = "<group>"; };
-		2B9C594C22CDDD67006C246A /* ZQTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTransitionAnimator.h; sourceTree = "<group>"; };
-		2B9C594D22CDDD67006C246A /* ZQTransitionAnimatior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTransitionAnimatior.m; sourceTree = "<group>"; };
-		2B9C594F22CDE123006C246A /* ZQLevelTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQLevelTransitionAnimator.h; sourceTree = "<group>"; };
-		2B9C595022CDE123006C246A /* ZQLevelTransitionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQLevelTransitionAnimator.m; sourceTree = "<group>"; };
 		2B9C595E22CF3447006C246A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2B9C596A22D432E3006C246A /* ZQRootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQRootController.h; sourceTree = "<group>"; };
 		2B9C596B22D432E3006C246A /* ZQRootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQRootController.m; sourceTree = "<group>"; };
@@ -129,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				2B73485D22C4DA8A0007C40F /* Service */,
-				2B73484422C4AB1C0007C40F /* Model */,
 				2B73484322C4AB0C0007C40F /* View */,
 				2B73484222C4AB010007C40F /* Controller */,
 			);
@@ -166,17 +159,6 @@
 				2B5A1DDC22D44A3A003C70BA /* ZQTodayGameCell.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		2B73484422C4AB1C0007C40F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2B9C594C22CDDD67006C246A /* ZQTransitionAnimator.h */,
-				2B9C594D22CDDD67006C246A /* ZQTransitionAnimatior.m */,
-				2B9C594F22CDE123006C246A /* ZQLevelTransitionAnimator.h */,
-				2B9C595022CDE123006C246A /* ZQLevelTransitionAnimator.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		2B73484522C4AB280007C40F /* Support File */ = {
@@ -342,13 +324,11 @@
 				2B5C617D22CB0B9900022F69 /* ZQTodayDismissController.m in Sources */,
 				2B73484822C4AB950007C40F /* ZQTodayPresentController.m in Sources */,
 				2B5A1DE022D46475003C70BA /* ZQTodayPopController.m in Sources */,
-				2B9C594E22CDDD67006C246A /* ZQTransitionAnimatior.m in Sources */,
 				2B73486022C4DAB20007C40F /* UIView+Animations.m in Sources */,
 				2B9C597222D43922006C246A /* ZQStyleController.m in Sources */,
 				2B73484B22C4AC1C0007C40F /* ZQTodayDataSource.m in Sources */,
 				2B73484E22C4ADEB0007C40F /* ZQTodayGameCell.m in Sources */,
 				2B9C596D22D432E3006C246A /* ZQRootController.m in Sources */,
-				2B9C595122CDE123006C246A /* ZQLevelTransitionAnimator.m in Sources */,
 				2B73481E22C4A5B40007C40F /* main.m in Sources */,
 				2B9C597722D44470006C246A /* ZQTodayPushController.m in Sources */,
 				2B73481022C4A59B0007C40F /* ZQAppDelegate.m in Sources */,
