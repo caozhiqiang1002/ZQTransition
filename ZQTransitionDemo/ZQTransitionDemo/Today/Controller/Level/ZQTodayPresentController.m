@@ -35,15 +35,6 @@ static NSString * const CellID = @"Today_Game_ID";
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    ZQAppDelegate *appDelegate = (ZQAppDelegate *)[UIApplication sharedApplication].delegate;
-    appDelegate.isForcePortrait = YES;
-    appDelegate.isForceLandscape = NO;
-    [appDelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:self.view.window];
-    
-    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
-    
-    [UIViewController attemptRotationToDeviceOrientation];
 }
 
 - (void)configTableDataSource {

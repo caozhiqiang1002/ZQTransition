@@ -7,7 +7,7 @@
 //
 
 #import "ZQDetailViewController.h"
-#import "ZQTodayController.h"
+#import "ZQTodayPresentController.h"
 #import "ZQTodayGameCell.h"
 #import "ZQLevelTransitionAnimator.h"
 
