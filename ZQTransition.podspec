@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.name         = "ZQTransition"
  
 
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
  
 
   s.summary      = "提供各种转场动画效果的组件"

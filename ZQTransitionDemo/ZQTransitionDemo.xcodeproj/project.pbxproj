@@ -93,7 +93,6 @@
 				3432C401EB216D4C8FBAA067 /* Pods-ZQTransitionDemo.debug.xcconfig */,
 				01549BFD5D7CA13971294967 /* Pods-ZQTransitionDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
