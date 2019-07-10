@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/caozhiqiang1002/ZQTransition.git", :tag => "#{s.version}" }
 
 
-  s.source_files  = "Core/*.{h, m}"
+  s.source_files  = "Core/*.{h,m}"
 
 
   s.requires_arc = true

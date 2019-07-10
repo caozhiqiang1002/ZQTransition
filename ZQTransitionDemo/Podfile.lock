@@ -1,5 +1,5 @@
 PODS:
-  - ZQTransition (1.0.0)
+  - ZQTransition (1.0.1)
 
 DEPENDENCIES:
   - ZQTransition
@@ -9,7 +9,7 @@ SPEC REPOS:
     - ZQTransition
 
 SPEC CHECKSUMS:
-  ZQTransition: d2f0efb11af04196efee64b6d2ff4fc02020e7a1
+  ZQTransition: dd89e9fed6a6b5d155711d8e6552188184345a3c
 
 PODFILE CHECKSUM: 74d131ed4a29e38fa134e80a75f22c82ae7dbc21
 
